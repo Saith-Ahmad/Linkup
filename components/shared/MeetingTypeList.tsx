@@ -62,7 +62,7 @@ function MeetingTypeList() {
 
 
   return (
-    <section className='grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4'>
+    <section className='grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-2'>
       <HomeCard
         img="/icons/add-meeting.svg"
         title="New Meeting"
@@ -104,7 +104,7 @@ function MeetingTypeList() {
               </label>
               <Textarea
                 required={true}
-                className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
+                className="border-none glassmorphism focus-visible:ring-0 focus-visible:ring-offset-0"
                 onChange={(e) =>
                   setValues({ ...values, description: e.target.value })
                 }
@@ -122,7 +122,8 @@ function MeetingTypeList() {
                 timeIntervals={15}
                 timeCaption="time"
                 dateFormat="MMMM d, yyyy h:mm aa"
-                className="w-full rounded bg-dark-3 p-2 focus:outline-none"
+                className="w-full rounded glassmorphism p-2 focus:outline-none"
+                calendarClassName="dark-datepicker"
               />
             </div>
           </MeetingModel>
@@ -153,7 +154,7 @@ function MeetingTypeList() {
         <Input
           placeholder="Meeting link"
           onChange={(e) => setValues({ ...values, link: e.target.value })}
-          className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
+          className="border-none glassmorphism focus-visible:ring-0 focus-visible:ring-offset-0"
         />
       </MeetingModel>
 

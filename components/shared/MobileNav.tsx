@@ -23,10 +23,11 @@ const MobileNav = () => {
             className="cursor-pointer sm:hidden"
           />
         </SheetTrigger>
-        <SheetContent side="left" className="border-none bg-dark-1">
+        <SheetContent side="left" className="border-none sidebar_left">
           <Link href="/" className="flex items-center gap-1">
             <Image
-              src="/icons/logo.svg"
+              src="/icons/logo.png"
+              unoptimized
               width={32}
               height={32}
               alt="yoom logo"
@@ -47,17 +48,12 @@ const MobileNav = () => {
                         className={cn(
                           'flex gap-4 items-center p-4 rounded-lg w-full max-w-60',
                           {
-                            'bg-primary-1': isActive,
+                            'btn_primary_class text-black !border-none': isActive,
                           }
                         )}
                       >
-                        <Image
-                          src={item.imgURL}
-                          alt={item.label}
-                          width={20}
-                          height={20}
-                        />
-                        <p className="font-semibold">{item.label}</p>
+                         <item.imgURL/>
+                        <p className="font-normal">{item.label}</p>
                       </Link>
                     </SheetClose>
                   );

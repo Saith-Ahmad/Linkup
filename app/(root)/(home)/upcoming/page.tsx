@@ -1,12 +1,13 @@
-import CallList from '@/components/shared/CallList'
-import React from 'react'
+import CallList from "@/components/shared/CallList";
 
-function Upcomming() {
+
+const PreviousPage = () => {
   return (
-    <div>
-      <CallList type={'upcoming'}/>
-    </div>
-  )
-}
+    <section className="flex size-full flex-col gap-10 text-white">
+      <h1 className="text-3xl font-bold">Sheduled Meatings</h1>
+      <CallList type="upcoming" />
+    </section>
+  );
+};
 
-export default Upcomming
+export default PreviousPage; 

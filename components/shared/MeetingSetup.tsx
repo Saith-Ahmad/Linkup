@@ -38,7 +38,7 @@ function MeetingSetup({setIsSetupComplete}:{setIsSetupComplete:(value:boolean)=>
       </div>
 
       <Button
-        className="rounded-md bg-green-500 px-4 py-2.5"
+        className="rounded-md blue_btn px-4 py-2.5" 
         onClick={() => {
           call.join();
 

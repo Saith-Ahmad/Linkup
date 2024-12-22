@@ -1,40 +1,38 @@
+import {  CalendarCheck, CalendarHeartIcon, CircleFadingPlus, LayoutDashboard, Video } from "lucide-react";
 import { ReactNode } from "react";
 
 export const sidebarLinks = [
     {
-      imgURL: '/icons/Home.svg',
+      imgURL: LayoutDashboard,
       route: '/',
       label: 'Dashboard',
     },
   
     {
-      imgURL: '/icons/upcoming.svg',
+      imgURL: CalendarHeartIcon,
       route: '/upcoming',
       label: 'Sheduled',
     },
     {
-      imgURL: '/icons/previous.svg',
+      imgURL: CalendarCheck,
       route: '/previous',
       label: 'Previous',
     },
     {
-      imgURL: '/icons/Video.svg',
+      imgURL: Video,
       route: '/recordings',
       label: 'Recordings',
     },
     {
-      imgURL: '/icons/add-personal.svg',
+      imgURL: CircleFadingPlus,
       route: '/personal-room',
       label: 'Personal Room',
     },
   ];
   
   export const avatarImages = [
-    '/images/avatar-1.jpeg',
-    '/images/avatar-2.jpeg',
-    '/images/avatar-3.png',
-    '/images/avatar-4.png',
-    '/images/avatar-5.png',
+    '/images/avatar-1.png',
+    '/images/avatar-2.jpg'
   ];
 
 

@@ -3,9 +3,11 @@ import React from 'react'
 
 function page() {
   return (
-    <main>
-        <SignUp />
-    </main>
+   <div className="flex justify-center items-center min-h-screen py-10"> 
+        <div className="shadow-blue-300 shadow-lg">
+        <SignUp/>
+        </div>
+       </div>
   )
 }
 
