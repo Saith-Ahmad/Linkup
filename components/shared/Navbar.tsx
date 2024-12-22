@@ -18,7 +18,7 @@ function Navbar() {
             className="max-sm:size-10"
           />
           <p className="text-[26px] font-extrabold text-white max-sm:hidden">
-            LinkUp
+            LoopCall
           </p>
         </Link>
         <div className="flex justify-center items-center gap-5 ">
